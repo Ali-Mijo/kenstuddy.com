@@ -12,23 +12,9 @@ let mix = require('laravel-mix');
  */
 
 mix.styles([
-    'resources/assets/css/other.css',
+    'resources/assets/css/vendor.css',
     'resources/assets/css/main.css'
 ], 'public/css/app.css')
    .js([
-    'resources/assets/js/app.js',
-    'resources/assets/js/jquery.scrollTo.js',
-    'resources/assets/js/jquery.nav.js',
-    'resources/assets/js/jquery.sticky.js',
-    'resources/assets/js/vegas.js',
-    'resources/assets/js/jquery.isotope.js',
-    'resources/assets/js/jquery.magnific-popup.js',
-    'resources/assets/js/waypoints.js',
-    'resources/assets/js/jqBootstrapValidation.js',
-    'resources/assets/js/contact_me.js',
-    'resources/assets/js/main.js'
-], 'public/js/app.js')
-   .extract([
-    'jquery',
-    'vue'
-]);
+    'resources/assets/js/app.js'
+], 'public/js/app.js').extract(['vue']);
